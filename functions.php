@@ -70,7 +70,7 @@ function task_post_type()
         'menu_icon' => 'dashicons-hammer'
     );
 
-    register_post_type('tasks', $args);
+    register_post_type('task', $args);
 }
 
 add_action('init', 'task_post_type');
@@ -82,6 +82,35 @@ function task_taxonomy()
         'hierarchical' => true
     );
 
-    register_taxonomy('types', array('tasks'), $args);
+    register_taxonomy('task_types', array('tasks'), $args);
 }
 add_action('init', 'task_taxonomy');
+
+function project_post_type()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Projects',
+            'singular_name' => 'Project'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'menu_icon' => 'dashicons-networking'
+    );
+
+    register_post_type('project', $args);
+}
+
+add_action('init', 'project_post_type');
+
+function project_taxonomy()
+{
+    $args = array(
+        'public' => true,
+        'hierarchical' => true
+    );
+
+    register_taxonomy('project_types', array('projects'), $args);
+}
+add_action('init', 'project_taxonomy');
