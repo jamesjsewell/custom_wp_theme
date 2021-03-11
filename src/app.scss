@@ -1,4 +1,30 @@
-body {
-    margin: 0px;
-    padding: 0px;
+.single-task-view {
+    .task-summary {
+        display: flex;
+        justify-content: center;
+
+        .card {
+            min-width: 300px;
+
+            .card-body {
+                .status-and-priority {
+                    display: flex;
+
+                    div {
+                        flex-basis: 0;
+                        flex-grow: 1;
+                        text-align: center;
+                    }
+
+                    :first-child {
+                        border-right: 1px solid grey;
+                    }
+                }
+            }
+
+            .card-footer {
+                text-align: center;
+            }
+        }
+    }
 }
