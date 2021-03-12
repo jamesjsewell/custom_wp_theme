@@ -117,7 +117,10 @@ get_header(); ?>
         </div>
     </div>"; ?>
 
-    <div style="text-align:center"><?php the_content(); ?></div>
+    <div class="text-center">
+        <h5 class="mb-2">Project Description</h5>
+        <?php the_content(); ?>
+    </div>
 
 </div>
 

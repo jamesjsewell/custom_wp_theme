@@ -42,6 +42,9 @@ get_header(); ?>
 
     </div>
 
-    <div style="text-align:center"><?php the_content(); ?></div>
+    <div>
+        <h5 class="mb-2">Task Description</h5>
+        <?php the_content(); ?>
+    </div>
 </div>
 <?php get_footer(); ?>
