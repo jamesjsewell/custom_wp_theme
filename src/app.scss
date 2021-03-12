@@ -1,30 +1,33 @@
-.single-task-view {
-    .task-summary {
-        display: flex;
-        justify-content: center;
+.task-summary {
+    display: flex;
+    justify-content: center;
 
-        .card {
-            min-width: 300px;
+    .card {
+        min-width: 300px;
 
-            .card-body {
-                .status-and-priority {
-                    display: flex;
+        h5{
+            text-align: center;
+        }
 
-                    div {
-                        flex-basis: 0;
-                        flex-grow: 1;
-                        text-align: center;
-                    }
+        .card-body {
 
-                    :first-child {
-                        border-right: 1px solid grey;
-                    }
+            .status-and-priority {
+                display: flex;
+
+                div {
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    text-align: center;
+                }
+
+                :first-child {
+                    border-right: 1px solid grey;
                 }
             }
+        }
 
-            .card-footer {
-                text-align: center;
-            }
+        .card-footer {
+            text-align: center;
         }
     }
 }

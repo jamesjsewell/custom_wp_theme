@@ -1,21 +1,24 @@
-.single-task-view .task-summary {
+.task-summary {
   display: flex;
   justify-content: center;
 }
-.single-task-view .task-summary .card {
+.task-summary .card {
   min-width: 300px;
 }
-.single-task-view .task-summary .card .card-body .status-and-priority {
+.task-summary .card h5 {
+  text-align: center;
+}
+.task-summary .card .card-body .status-and-priority {
   display: flex;
 }
-.single-task-view .task-summary .card .card-body .status-and-priority div {
+.task-summary .card .card-body .status-and-priority div {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
 }
-.single-task-view .task-summary .card .card-body .status-and-priority :first-child {
+.task-summary .card .card-body .status-and-priority :first-child {
   border-right: 1px solid grey;
 }
-.single-task-view .task-summary .card .card-footer {
+.task-summary .card .card-footer {
   text-align: center;
 }

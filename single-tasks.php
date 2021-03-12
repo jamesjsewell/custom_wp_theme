@@ -1,5 +1,5 @@
 <?php
-$project = get_field('project');
+$project = get_field('tasks-projects');
 $project_permalink = get_permalink($project->ID);
 $priority = get_field('priority');
 $status = get_field('status');
