@@ -60,10 +60,10 @@ testingEs6();
 
 /***/ }),
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
+/***/ "./src/style.scss":
+/*!************************!*\
+  !*** ./src/style.scss ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -916,7 +916,7 @@ try {
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./src/app.js"],
-/******/ 			["./src/app.scss"]
+/******/ 			["./src/style.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
